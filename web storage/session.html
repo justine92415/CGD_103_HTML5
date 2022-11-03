@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>session storage</title>
+</head>
+
+<body>
+    <button onclick="show()">show storage</button>
+
+    <script>
+
+        function show() {
+            if (sessionStorage['username'] == null) {
+                let name = prompt(`What's your username?`)
+                sessionStorage['username'] = name
+            } else {
+                alert(sessionStorage['username'])
+            }
+        }
+
+        /*  function show(){
+             if(sessionStorage['username'] == null){
+                 let name = prompt(`What's your username?`)
+                 sessionStorage['username'] = name
+             }else{
+                 alert(sessionStorage['username'])
+             }
+         } */
+    </script>
+</body>
+
+</html>

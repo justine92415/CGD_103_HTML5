@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>customized video</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="new.js"></script>
+    <!-- <script src="my.js"></script> -->
+</head>
+
+<body>
+    <div id="skin">
+        <video id="myMovie" width="640">
+            <source src="./movies/videoplayback.mp4">
+        </video>
+        <nav>
+            <div id="buttons">
+                <button id="playButton">play</button>
+                <button id="stopButton">stop</button>
+                <button id="upButton">Volume up</button>
+                <button id="downButton">Volume down</button>
+                <button id="mutedButton">muted</button>
+                <!-- <button id="fullButton">Full Screen</button> -->
+            </div>
+            <div id="defaultBar">
+                <div id="progress"></div>
+            </div>
+        </nav>
+        <div class="currentVolume">currentVolume:&nbsp;1</div>
+    </div>
+</body>
+
+</html>
