@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Drag & Drop-- image</title>
+    <script src="./dragImage.js"></script>
+    <style>
+        #dropzone {
+            border: 1px solid #ccc;
+            width: 400px;
+            height: 600px;
+        }
+
+        img {
+            max-width: 400px;
+            max-height: 600px;
+            transform: scale(1);
+            transform: rotate(0deg);
+        }
+
+        .btn-wapper {
+            display: flex;
+            gap: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 id="fileName"></h2>
+    <div id="dropzone">
+        <img id="image" alt="">
+    </div>
+    <div class="btn-wapper">
+        <button class="zoomIn">zoom-In</button>
+        <button class="zoomOut">zoom-Out</button>
+        <button class="left">left</button>
+        <button class="right">right</button>
+        <button class="delete">delete</button>
+    </div>
+</body>
+
+</html>
